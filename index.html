@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度注册</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+<body>
+    <div class="root">
+        <!-- 百度logo -->
+        <div class="logo">
+            <img src="https://passport.baidu.com/static/passpc-account/img/baidu.png">
+        </div>
+        <!-- 底部文字标语 -->
+        <div class="bottomText">
+            <p style="font-size: 50px;font-weight: bold;">用科技</p>
+            <p style="font-size: 30px;">让复杂的世界更简单</p>
+        </div>
+        <!-- 百度标语 -->
+        <div class="logoText">
+            <span>
+                <a href="https://passport.baidu.com/v2/?ucenterfeedback#reg" target="_blank">帮助中心</a>
+                <span class="line">|</span>
+                <a class="listener" href='https://zhiqiu.baidu.com/imcswebchat/roulette/in?id=48721&token=1nnbs7op4ocsr68143oamrjq9c4eoin2&domainID=pass&type=2'></a>
+                <span class="logo_text">2020&nbsp;©Baidu</span>
+            </span>
+        </div>
+        <!-- 验证信息表单 -->
+        <div class="inputBox">
+            <!-- 头部信息内容 -->
+            <div class="inputNav">
+                <h3 style="font-size: 36px;color: #000;padding-bottom: 4px;">欢迎注册</h3>
+                <p>已有账号? <span id='inputBtn'>登录</span></p>
+            </div>
+            <!-- form表单内容 -->
+            <div class="inputForm">
+                    <span class="userName_msg" id='userName_msg'>设置后不可更改，中英文均可，最长14个英文或者7个汉字</span>
+                    <p class='inputP'>
+                        <label class="inputLable">用户名</label>
+                        <input type="text" name="userName" class="inputStyle"  id='userName' autocomplete="off" placeholder="请设置用户名">
+                        <span class="userError" id='userNameError'></span>
+                    </p>
+                    <p class='inputP'>
+                        <label class="inputLable">手机号</label>
+                        <input type="text" name="userPhone" class="inputStyle" id='userPhone' autocomplete="off" placeholder="可用于登录和找回密码">
+                        <span class="userError" id='userPhoneError'></span>
+                    </p>
+                    <span class="userPassword_msg" id='userPassword_msg'>
+                        <span id='isRight0'></span>
+                        长度为8~14个字符<br/>
+                        <span id='isRight1'></span>
+                        字母/数字以及标点符号至少包含两种<br>
+                        <span id='isRight2'></span>
+                        不允许有空格，中文
+                    </span>
+                    <p class="inputP">
+                        <label class="inputLable">密 &nbsp; 码</label>
+                        <input type='password' name="password" class="inputStyle" id="userPassword" autocomplete="off" placeholder="请设置登录密码" >
+                        <span class="intputBtn" id="passwordMsg"></span>
+                        <span class="userError" id='userPasswordError'></span>
+                    </p>
+                    <p class="inputP1">
+                        <label class="inputLable">验证码</label>
+                        <input type="text" name="verifyCode" class="inputCode" id="userCode" autocomplete="off" maxlength="6" placeholder="请输入验证码">
+                        <input type="button" class="inputVerifyCode" id='inputVerifyCode' value="获取验证码" autocomplete="off">
+                        <span class="userError" id='userCodeError'></span>
+                    </p>
+                    <!-- 注册按钮 -->
+                    <p class="inputLogin">
+                        <input class="loginBtn" type="submit" id="loginSubmit" value="注册">
+                    </p>
+                    <!-- 协议部分 -->
+                    <p class="inputDeal">
+                        <input type="checkbox" name="isAgree" autocomplete="off" id="inputCkeck">
+                        <label style="color:#666;font-size: 12px;margin-left: 5px;">阅读并接受</label>
+                        <a style="color:#2E58FF;font-size: 12px;" target="_blank" href="http://passport.baidu.com/static/passpc-account/html/protocal.html">《百度用户协议》及</a>
+                        <a style="color:#2E58FF;font-size: 12px;" target="_blank" href="http://privacy.baidu.com/mdetail?id=288">《百度隐私权保护声明》</a>
+                    </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- build:js bundle.min.js -->
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./calc.js"></script>
+<!-- endbuild -->
+</html>

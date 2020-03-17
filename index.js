@@ -90,8 +90,11 @@ inputVerifyCode.click(function () {
             if (time !== 0) {
                 inputVerifyCode.attr('value', "验证码获取中(" + time + ")");
                 inputVerifyCode.attr("disabled",'disabled');
+                inputVerifyCode.css('cursor','not-allowed');
             } else {
                 inputVerifyCode.attr('value', "获取验证码");
+                inputVerifyCode.removeAttr("disabled");
+                inputVerifyCode.css('cursor','pointer');
                 userCodeError.html('验证码超时');
                 clearInterval(timer);
             }

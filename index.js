@@ -95,7 +95,7 @@ inputVerifyCode.click(function () {
                 inputVerifyCode.attr('value', "获取验证码");
                 inputVerifyCode.removeAttr("disabled");
                 inputVerifyCode.css('cursor','pointer');
-                userCodeError.html('验证码超时');
+                userCodeError.html('请求超时，请稍后再试');
                 clearInterval(timer);
             }
         }, 1000);
